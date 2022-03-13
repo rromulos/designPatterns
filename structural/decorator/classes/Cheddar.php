@@ -1,9 +1,8 @@
 <?php
 
 require_once('ExtraDecorator.php');
-require_once('../interfaces/SandwichInterface.php');
 
-class Cheddar extends ExtraDecorator implements SandwichInterface
+class Cheddar extends ExtraDecorator
 {
     private $sandwich;
 
@@ -19,6 +18,6 @@ class Cheddar extends ExtraDecorator implements SandwichInterface
 
     public function price ()
     {
-        return 2 + $this->sandwich->price();
+        return 2.50 + $this->sandwich->price();
     }
 }

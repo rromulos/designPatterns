@@ -21,10 +21,10 @@ require_once('../classes/Bacon.php');
 $seafood = new SeafoodSandwich();
 $seafood = new Pickles($seafood);
 
-echo "Seafood Sandwich price = $" . $seafood->price() ."<br>";
+echo $seafood->getName()." price = $" . $seafood->price() ."<br>";
 
 $roastBeef = new RoastBeefSandwich();
 $roastBeef = new Cheddar($roastBeef);
 $roastBeef = new Bacon($roastBeef);
 
-echo "RoastBeef Sandwich price = $" . $roastBeef->price();
+echo $roastBeef->getName() . " price = $" . $roastBeef->price();

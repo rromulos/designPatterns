@@ -1,13 +1,12 @@
 <?php
 
 require_once('Sandwich.php');
-require_once('../interfaces/SandwichInterface.php');
 
-class RoastBeefSandwich extends Sandwich implements SandwichInterface
+class RoastBeefSandwich extends Sandwich
 {
     public function __construct ()
     {
-        $this->setName('RoastBeefSandwich');
+        $this->setName('RoastBeef Sandwich');
     }
 
     public function price ()

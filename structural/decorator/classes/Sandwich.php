@@ -1,6 +1,8 @@
 <?php 
 
-abstract class Sandwich
+require_once('../interfaces/SandwichInterface.php');
+
+abstract class Sandwich implements SandwichInterface
 {
     protected $name;
 

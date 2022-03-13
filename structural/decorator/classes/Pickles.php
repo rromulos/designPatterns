@@ -1,9 +1,8 @@
 <?php
 
 require_once('ExtraDecorator.php');
-require_once('../interfaces/SandwichInterface.php');
 
-class Pickles extends ExtraDecorator implements SandwichInterface
+class Pickles extends ExtraDecorator
 {
     private $sandwich;
 
